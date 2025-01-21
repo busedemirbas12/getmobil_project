@@ -1,0 +1,28 @@
+<suite name="All Test Suite" parallel="classes" thread-count="4">
+
+    <test verbose="2" preserve-order="true" name="getmobilTest">
+
+        <classes>
+            <class name="com.getmobil.TestRunner"></class>
+        </classes>
+
+    </test>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.getmobil.BaseTest" />
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value= "chrome" />
+        <classes>
+            <class name="com.getmobil.BaseTest" />
+        </classes>
+    </test>
+    <test name="ExplorerTest">
+        <parameter name="browser" value= "explorer" />
+        <classes>
+            <class name="com.getmobil.BaseTest" />
+        </classes>
+    </test>
+</suite>
